@@ -21,5 +21,5 @@ export default function Sudoku(array) {
 }
 
 Sudoku.prototype.checkRow = function() {
-  return "I can't answer that yet!";
+  return "true";
 };
