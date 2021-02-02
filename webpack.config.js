@@ -15,14 +15,13 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: '',
+      title: 'Sudoku',
       template: './src/index.html',
       inject: 'body'
     })
   ],
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.css$/,
         use: [
           'style-loader',
@@ -36,4 +35,4 @@ module.exports = {
       }
     ]
   }
-};
+};u
