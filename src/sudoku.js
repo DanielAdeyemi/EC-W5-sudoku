@@ -21,5 +21,13 @@ export default function Sudoku(array) {
 }
 
 Sudoku.prototype.checkRow = function() {
-  return "true";
+  let sum = 0;
+  for (let i=0; i < 9; i++) {
+    sum += this.row0[i];
+  }
+  if (sum === 45) {
+    return "true";
+  } else {
+    return "false";
+  }
 };
