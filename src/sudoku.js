@@ -21,6 +21,11 @@ export default function Sudoku(array) {
 }
 
 Sudoku.prototype.checkRow = function() {
+  let row0 = this.row0.map(function() {
+
+  });
+  console.log(row0);
+
   // let row0 = this.row0;
   // let row1 = this.row1;
   // let row2 = this.row2;
@@ -59,17 +64,21 @@ Sudoku.prototype.checkRow = function() {
   // } else {
   //   return "false";
   // }
-  // for (let i = 0; i < 9; i++) {
-  //   let sum = 0;
-  //   let row = this.rowi;
-  //   for (let j = 0; j < 9; j++) {
-  //     sum += row[i][j];
-  //   }
-  //   if (sum !== 45) {
-  //     return "false";
-  //   } else {
-  //     continue;
-  //   }
-  // }
-  // return "true";
+  console.log(Object.values(Sudoku))
+    // .forEach(function() {
+    //   console.log(row);
+    // });
+    //   (let i = 0; i < 9; i++) {
+    //     let sum = 0;
+    //     let row = this.rowi;
+    //     for (let j = 0; j < 9; j++) {
+    //       sum += row[i][j];
+    //     }
+    //     if (sum !== 45) {
+    //       return "false";
+    //     } else {
+    //       continue;
+    //     }
+    //   }
+    //   return "true";
 };
